@@ -16,7 +16,7 @@ public class LoginUserAccount extends Login_User_Account{
 	public void loginAccount() {
 		Utils.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		Utils.driver.get("http://go.trackwick.com");
-		userName.sendKeys("arun.datt@kaptune.com");
+		userName.sendKeys("neha@gmail.com");
 		passWord.sendKeys("123456");
 		loginButton.sendKeys(Keys.ENTER);
 		
@@ -37,7 +37,7 @@ public class LoginUserAccount extends Login_User_Account{
 				}
 		}
 		catch(Exception e) {
-			JOptionPane.showMessageDialog(Utils.inputBox, "Ahh Ah..! This Attempt to login was unsucessful!");
+			JOptionPane.showMessageDialog(Utils.inputBox, "Ah Ahh..! This Attempt to login was unsucessful!");
 		}
 	}
 }
